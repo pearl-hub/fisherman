@@ -1,6 +1,6 @@
 
 function post_install(){
-    cd $PEARL_HOME/packages/fisherman/module
+    cd $PEARL_PKGDIR/module
     make
     fish -c "fisher update"
     return 0
